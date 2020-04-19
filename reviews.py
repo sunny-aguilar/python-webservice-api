@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 #
-#   A
-#   a
-#   a
+#   This script interacts with an API in order to upload client reviews on
+#   the client's website. API is implemented using Django.
+#   
 #
 #   Author:     Sandro Aguilar
 #   Date:       April 15, 2020
@@ -10,6 +10,7 @@
 import os
 import requests
 import json
+
 
 # client feedback directory
 files = os.listdir('data/feedback/')
