@@ -21,6 +21,7 @@ files = os.listdir('data/feedback')
 feedback = {}
 
 for file in files:
+    print(file)
     for line in file:
         print(line)
         field = line.strip()
