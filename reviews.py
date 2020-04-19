@@ -19,7 +19,8 @@ files = os.listdir('data/feedback/')
 # print(files)
 field_names = ['title', 'name', 'date', 'feedback']
 index = 0
-feedback_list = []
+
+# object to hold customer data
 feedback = {'title':'', 'name':'', 'date': '', 'feedback':''}
 
 # open each file in directory
