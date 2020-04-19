@@ -24,7 +24,6 @@ feedback = {'title':'', 'name':'', 'date': '', 'feedback':''}
 
 for file in files:
     with open('data/feedback/'+file, 'r+') as current_file:
-    # f = open('data/feedback/' + file)
         for line in current_file:
             # remove trailing space and linefeed/carriage returns
             field = line.strip()
