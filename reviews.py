@@ -40,10 +40,3 @@ for file in files:
 
         # reset index
         index = 0
-
-
-
-
-# serialize data
-# with open('feedback_list.json', 'w') as serial_feedback:
-#     json.dump(feedback_list, serial_feedback)
