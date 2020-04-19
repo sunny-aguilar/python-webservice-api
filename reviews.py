@@ -26,8 +26,9 @@ for file in files:
     # f = open('data/feedback/' + file)
         for line in current_file:
             field = line.strip()
-            # print(field)
+            # print(field_names[index])
             feedback[field_names[index]] = field
             index += 1
+        index = 0
 
 print(feedback)
