@@ -9,6 +9,7 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 import os
 import requests
+import json
 
 x = requests.get('https://w3schools.com/python/demopage.htm')
 
@@ -17,5 +18,7 @@ x = requests.get('https://w3schools.com/python/demopage.htm')
 files = os.listdir('data/feedback')
 # print(files)
 
+feedback = {}
+
 for file in files:
-    print(file)
+    json.dump()
