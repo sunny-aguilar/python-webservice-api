@@ -33,9 +33,12 @@ for file in files:
         feedback_list.append(feedback)
         index = 0
 
-print(feedback_list)
+# print(feedback_list)
 
 
 # serialize data
 with open('feedback_list.json', 'w') as serial_feedback:
     json.dump(feedback_list, serial_feedback)
+
+
+
