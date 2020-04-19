@@ -30,7 +30,7 @@ for file in files:
             # print(line)
             feedback[field_names[index]] = field
             index += 1
-        print(feedback_list)
+        print(feedback)
         index = 0
 
 # print(feedback_list)
