@@ -13,8 +13,7 @@ import json
 
 x = requests.get('https://w3schools.com/python/demopage.htm')
 
-# print(x.headers)
-
+# client feedback directory
 files = os.listdir('data/feedback/')
 
 # field name
