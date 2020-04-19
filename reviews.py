@@ -37,5 +37,5 @@ print(feedback_list)
 
 
 # serialize data
-
+with open(feedback_list, 'w') as serial_feedback:
 
