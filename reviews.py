@@ -22,6 +22,7 @@ index = 0
 feedback_list = []
 feedback = {'title':'', 'name':'', 'date': '', 'feedback':''}
 
+# open each file in directory
 for file in files:
     with open('data/feedback/'+file, 'r+') as current_file:
         for line in current_file:
