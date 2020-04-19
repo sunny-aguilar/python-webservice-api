@@ -37,5 +37,5 @@ print(feedback_list)
 
 
 # serialize data
-with open(feedback_list, 'w') as serial_feedback:
-
+with open('feedback_list.json', 'w') as serial_feedback:
+    json.dump(feedback_list, serial_feedback)
