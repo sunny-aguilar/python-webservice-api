@@ -16,8 +16,10 @@ x = requests.get('https://w3schools.com/python/demopage.htm')
 # print(x.headers)
 
 files = os.listdir('data/feedback/')
-# print(files)
+# field name
 field_names = ['title', 'name', 'date', 'feedback']
+
+# holds current field name item
 index = 0
 
 # object to hold customer data
