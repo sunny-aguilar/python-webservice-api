@@ -18,6 +18,7 @@ x = requests.get('https://w3schools.com/python/demopage.htm')
 files = os.listdir('data/feedback/')
 # print(files)
 field_names = ['title', 'name', 'date', 'feedback']
+index = 0
 feedback = {}
 
 for file in files:
@@ -25,7 +26,8 @@ for file in files:
     # f = open('data/feedback/' + file)
         for line in current_file:
             field = line.strip()
-            print(field)
-            feedback[field] = field.strip()
+            # print(field)
+            feedback[field_names[index]] = field.strip()
+            index += 1
 
-# print(feedback)
+print(feedback)
