@@ -20,7 +20,7 @@ files = os.listdir('data/feedback/')
 field_names = ['title', 'name', 'date', 'feedback']
 index = 0
 feedback_list = []
-feedback = {}
+feedback = {'title':'', 'name':'', 'date': '', 'feedback':''}
 
 for file in files:
     with open('data/feedback/'+file, 'r+') as current_file:
@@ -30,10 +30,18 @@ for file in files:
             # print(line)
             feedback[field_names[index]] = field
             index += 1
-        print(feedback)
+        
+        # serialize data using json
+        with open('feedback_list.json', 'w') as serial_feedback:
+            feedback_jason = json.dumps(feedback)
+            response = requests.post('http://', data = feedback_jason)
+            print(feedback_jason)
+            print(response.status_code)
+
+        # reset index
         index = 0
 
-# print(feedback_list)
+
 
 
 # serialize data
