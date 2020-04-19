@@ -27,7 +27,7 @@ for file in files:
         for line in current_file:
             field = line.strip()
             # print(field)
-            feedback[field_names[index]] = field.strip()
+            feedback[field_names[index]] = field
             index += 1
 
 print(feedback)
