@@ -41,6 +41,7 @@ for file in files:
         with open('feedback_list.json', 'w') as serial_feedback:
             # serialize Python object into json notation
             feedback_jason = json.dumps(feedback)
+            
             # send data to API
             response = requests.post('http://', data = feedback_jason)
 
