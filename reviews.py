@@ -11,8 +11,6 @@ import os
 import requests
 import json
 
-x = requests.get('https://w3schools.com/python/demopage.htm')
-
 # client feedback directory
 files = os.listdir('data/feedback/')
 
