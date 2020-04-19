@@ -21,4 +21,8 @@ files = os.listdir('data/feedback')
 feedback = {}
 
 for file in files:
-    json.dump()
+    for line in file:
+        field, value = line.strip().split('', 1)
+        feedback[field] = value.strip()
+
+print(feedback)
