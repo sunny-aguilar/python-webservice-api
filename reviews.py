@@ -21,8 +21,9 @@ files = os.listdir('data/feedback/')
 feedback = {}
 
 for file in files:
-    f = open('data/feedback/' + file)
-    for line in f:
+    with open(file, 'r') as current_file:
+    # f = open('data/feedback/' + file)
+    for line in current_file:
         field = line.strip()
         print(field)
         feedback[field] = field.strip()
