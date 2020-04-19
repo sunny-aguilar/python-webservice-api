@@ -27,18 +27,30 @@ for file in files:
     # f = open('data/feedback/' + file)
         for line in current_file:
             field = line.strip()
-            # print(field_names[index])
+            print(field)
             feedback[field_names[index]] = field
             index += 1
-        feedback_list.append(feedback)
+            feedback_list.append(feedback)
+        print(feedback_list)
         index = 0
+
+# for file in files:
+#     with open('data/feedback/'+file, 'r') as current_file:
+#     # f = open('data/feedback/' + file)
+#         for line in current_file:
+#             field = line.strip()
+#             # print(field_names[index])
+#             feedback[field_names[index]] = field
+#             index += 1
+#         feedback_list.append(feedback)
+#         index = 0
 
 # print(feedback_list)
 
 
 # serialize data
-feedback_json = json.dumps(feedback_list)
-print(feedback_json)
+# feedback_json = json.dumps(feedback_list)
+# print(feedback_json)
 
 
 
