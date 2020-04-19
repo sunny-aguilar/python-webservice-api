@@ -15,16 +15,16 @@ x = requests.get('https://w3schools.com/python/demopage.htm')
 
 # print(x.headers)
 
-files = os.listdir('data/feedback')
+files = os.listdir('data/feedback/')
 # print(files)
 
 feedback = {}
 
 for file in files:
-    print(file)
-    for line in file:
-        print(line)
+    f = open('data/feedback/' + file)
+    for line in f:
         field = line.strip()
+        print(field)
         feedback[field] = field.strip()
 
-print(feedback)
+# print(feedback)
