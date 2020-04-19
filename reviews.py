@@ -19,6 +19,7 @@ files = os.listdir('data/feedback/')
 # print(files)
 field_names = ['title', 'name', 'date', 'feedback']
 index = 0
+feedback_list = []
 feedback = {}
 
 for file in files:
@@ -29,6 +30,9 @@ for file in files:
             # print(field_names[index])
             feedback[field_names[index]] = field
             index += 1
+        feedback_list.append(feedback)
         index = 0
 
-print(feedback)
+print(feedback_list)
+
+
