@@ -22,7 +22,7 @@ feedback = {}
 
 for file in files:
     for line in file:
-        field, value = line.strip().split('', 1)
+        field, value = line.strip().split(' ', 1)
         feedback[field] = value.strip()
 
 print(feedback)
