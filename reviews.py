@@ -36,3 +36,6 @@ for file in files:
 print(feedback_list)
 
 
+# serialize data
+
+
