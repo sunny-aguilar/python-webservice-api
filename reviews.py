@@ -22,6 +22,7 @@ feedback = {}
 
 for file in files:
     for line in file:
+        print(line)
         field = line.strip()
         feedback[field] = field.strip()
 
