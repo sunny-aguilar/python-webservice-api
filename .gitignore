@@ -1,3 +1,4 @@
 # ignored files
 /env/
 .python-version
+.DS_Store
