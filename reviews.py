@@ -37,8 +37,8 @@ for file in files:
 
 
 # serialize data
-with open('feedback_list.json', 'w') as serial_feedback:
-    json.dump(feedback_list, serial_feedback)
+feedback_json = json.dumps(feedback_list)
+print(feedback_json)
 
 
 
