@@ -17,4 +17,5 @@ x = requests.get('https://w3schools.com/python/demopage.htm')
 files = os.listdir('data/feedback')
 print(files)
 
-
+for file in files:
+    print(file)
